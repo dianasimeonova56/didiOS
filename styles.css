@@ -50,6 +50,7 @@ body {
     background-color: #fa0202;
     margin: 0 10px 7px 0;
     border-color: #333;
+    cursor: pointer;
 }
 /* on hover darker color? */
 
@@ -60,6 +61,35 @@ body {
     margin: auto;
     border: 2px solid;
     border-color: #808080 #fff #fff #808080;
+}
+
+.icons {
+    padding: 20px 15px 15px 20px;
+    position: asbolute;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.icon {
+    cursor: pointer;
+    width: 64px;
+    height: 84px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.icon span {
+    align-self: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 #taskbar {

@@ -7,7 +7,8 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 // Make the DIV element draggable:
-dragElement(document.getElementById("window"));
+const window = document.getElementById("window")
+dragElement(window);
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {
@@ -60,3 +61,22 @@ function dragElement(element) {
     document.onmousemove = null;
   }
 }
+
+//window button close
+function closeWindow(element) {
+  element.style.display = 'none';
+}
+
+function openWindow(element) {
+  element.style.display = "flex"
+}
+
+document.querySelector('#window_button').addEventListener('click', () => {
+  closeWindow(window);
+})
+
+let icons = document.querySelectorAll('.icon').forEach((icon) => {
+  icon.addEventListener('click', () => {
+    icon.classList.toggle("selected")
+  })
+})
