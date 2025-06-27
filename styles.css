@@ -6,7 +6,7 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#window {
+.window {
     display: flex;
     border: 0.5rem outset white;
     border-radius: 25px;
@@ -23,10 +23,11 @@ body {
     resize: both;
     overflow: auto;
     flex-direction: column;
+    z-index: 100;
 }
 
 
-#window_bar {
+.window_bar {
     display: flex;
     background-color: #3486eb;
     color: white;
@@ -37,11 +38,11 @@ body {
     /* padding: 7px 5px; */
 }
 
-#window_bar span {
+.window_bar span {
     margin: 7px 5px;
 }
 
-#window_button {
+.window_button {
     border-bottom-left-radius:2px;
     border-bottom-right-radius: 2px; 
     width: 55px;
@@ -54,7 +55,7 @@ body {
 }
 /* on hover darker color? */
 
-#window_container {
+.window_container {
     background-color: hwb(0 86% 13% / 0.762);
     width: 85%;
     height: 115px;
@@ -107,7 +108,7 @@ body {
     left: 0;
 }
 
-#taskbar_date {
+.taskbar_date {
     color: #333;
     font-size: 12px;
     padding: 0 10px;
